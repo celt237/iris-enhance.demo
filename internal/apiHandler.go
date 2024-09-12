@@ -47,7 +47,7 @@ func (a *ApiHandlerImpl) CodeError(ctx iris.Context, produceType string, data in
 }
 func (a *ApiHandlerImpl) Error(ctx iris.Context, produceType string, data interface{}, err error) {
 	result := &model.Result{
-		Code:    200,
+		Code:    500,
 		Message: "fail",
 		Data:    nil,
 	}
